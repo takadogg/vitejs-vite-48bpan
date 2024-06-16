@@ -66,16 +66,23 @@
  * アロー関数
  */
 //　従来の関数
-function funk(str) {
-  return str;
-}
-const func1 = function (str) {
-  return str;
-};
-console.log('func1です');
+// function funk(str) {
+//   return str;
+// }
+// const func1 = function (str) {
+//   return str;
+// };
+// console.log('func1です');
 
-// アロー関数
-const func2 = (str) => {
-  return str;
-};
-console.log(func2('funk2です'));
+// // アロー関数
+// const func2 = (str) => {
+//   return str;
+// };
+// console.log(func2('funk2です'));
+
+const func3 = (num1, num2) => ({
+  hoge: num1,
+  huga: num2,
+});
+console.log(func3(10, 20));
+
