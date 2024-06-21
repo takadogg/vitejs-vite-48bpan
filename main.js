@@ -80,9 +80,31 @@
 // };
 // console.log(func2('funk2です'));
 
-const func3 = (num1, num2) => ({
-  hoge: num1,
-  huga: num2,
-});
-console.log(func3(10, 20));
+// const func3 = (num1, num2) => ({
+//   hoge: num1,
+//   huga: num2,
+// });
+// console.log(func3(10, 20));
 
+/**
+ * 分割代入
+ */
+// const myProfile = {
+//   name: "じゃけぇ",
+//   age: 31
+// };
+
+// // const massage1 = '名前は${myProfile.name}です。年齢は${myProfile.age}歳です。'
+// // console.log(message1)
+
+// const {name, age } = myProfile;
+// const massage2 = '名前は${name}です。年齢は${age}歳です。'
+
+const myProfile = ["じゃけぇ", 31];
+
+// const message3 = '名前は${myProfile[0]}です。年齢は${myProfile[1]}歳です。';
+// console.log(message3)
+
+const [name, age] = myProfile;
+const message4 = '名前は${name}です。年齢は${age}歳です。';
+console.log(message4);
